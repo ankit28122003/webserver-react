@@ -17,7 +17,7 @@ const ServiceCard = memo(function ServiceCard({
   return (
     <div className="h-full w-full rounded-4xl p-10 flex items-end justify-center will-change-transform">
       <div
-        className={`w-full h-[85%] bg-white rounded-4xl overflow-hidden flex flex-col items-center justify-center relative  border-[20px] border-[#d9d9d9] ${
+        className={`w-full  h-[85%]  bg-white rounded-4xl overflow-hidden flex flex-col items-center justify-center relative  border-[20px] border-[#d9d9d9] ${
           isActive ? "border-[#fbb039]" : ""
         }`}
       >
@@ -58,7 +58,7 @@ const ServiceCard = memo(function ServiceCard({
         </button>
 
         {isOpen && (
-          <div className="transition-all duration-500 px-2 pb-3 mt-2 overflow-y-auto h-52 text-sm">
+          <div className="transition-all duration-500 px-2 pb-3 mt-2 overflow-y-auto h-52 text-base">
             <p>{description}</p>
           </div>
         )}
@@ -168,7 +168,7 @@ const ServicesPage = () => {
   ];
 
   return (
-    <div className="w-full h-[75vh] md:h-screen p-5 relative">
+    <div className="w-full lg-h-1/2 h-[75vh] md:h-screen p-5 relative">
       <img
         src={assets.union}
         alt="bg-img"
@@ -192,7 +192,7 @@ const ServicesPage = () => {
           centeredSlides={true}
           loop
           autoplay={{
-            delay: window.innerWidth < 768 ? 5000 : 3000,
+            delay:  5000 ,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
